@@ -1,0 +1,49 @@
+.page{
+    /* margin: auto; */
+    /* width: 100%; */
+    background-color: rgb(219, 253, 255);
+    
+}
+body{
+    margin: 0;
+    /* padding: 60px 0 0 0; */
+    
+}
+.cabeza{
+    position: fixed;
+    top: 0;
+    width: 96%;
+    padding: 15px 20px;
+    background-color: snow;
+    font-size: 20px;
+    color: #000000;
+}
+#contenido{
+    /* padding-top: 110px; */
+    padding: 100px 0px 0px 10px;
+}
+
+#user{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cen{
+    justify-content: center;
+    display: flex;
+}
+#caja{
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 175px;
+    float: left;
+    margin: 10px;
+}
+#elementos{
+    padding: 10px;
+}
