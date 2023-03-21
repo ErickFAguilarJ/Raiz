@@ -1,0 +1,86 @@
+		@font-face{
+	   		font-family:inder;
+	   		src: url(inder.ttf) format('truetype');
+		}
+		@font-face{
+	   		font-family:titulares;
+	   		src: url(alegreya_bold.ttf) format('truetype');
+		}
+		@font-face{
+	   		font-family:titulares_light;
+	   		src: url(alegreya_light.ttf) format('truetype');
+		}
+		header{
+			position:relative;
+			width:1000px;
+			margin:0 auto;
+			font-family:titulares_light;
+			font-size:24px;
+			color:white;
+		}
+		body{
+   			background:url("img_html/fondol3.jpg");
+   			background-repeat:no-repeat;
+   			background-color:#F9F1CF;
+   			overflow-y:scroll;
+		}		
+		nav li{
+			list-style:none;
+			display:inline-block;
+			padding:4px 70px;
+			text-align:center;
+		}
+		ul{
+			padding:0;
+		}
+		a:hover{
+			color:white;
+		}
+		a{
+			text-decoration:none;
+			color:orange;
+			font-size:25px;
+		}
+		nav{
+			color:silver;
+			font-size:25px;
+			font-family:titulares;
+			width:800px;
+			margin-left:auto;
+			margin-right:auto;
+			margin-top:50px;
+		}
+		nav:hover{
+			cursor:default;
+		}
+		footer{
+			position:relative;
+			padding-top:12px;
+			font-family:titulares_light;
+			font-size:13px;
+			color:white;
+			width:1000px;
+			margin:0 auto;
+		}
+		#titulo{
+			font-family:titulares_light;
+			font-size:18px;
+			margin-top:65px;
+		}
+		#franja{
+		   width:100%;
+		   position:absolute;
+		   top:0;
+		   left:0;
+		   height:60px;
+		   background-color:#313B44;
+		   border-bottom:6px black solid;
+		}
+		#franja_final{
+		   width:100%;
+		   position:absolute;
+		   left:0;
+		   height:60px;
+		   background-color:#313B44;
+		   border-top:6px black solid;
+		}

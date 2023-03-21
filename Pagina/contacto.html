@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8"/>
+	<title>Contacto</title>
+	<link rel=stylesheet href="style.css" type="text/css"/>
+	<style type="text/css">
+		section{
+			width:1100px;
+			font-family:inder;
+			font-size:12px;
+			display:inline-block;
+			margin-bottom:45px;
+			position:relative;
+		}
+		#contenido{
+			width:1100px;
+			margin:0 auto;
+		}
+		form{
+			font-size:14px;
+			color:#6B121B;
+			border-radius:7px 0 0 7px;
+			background-color:#D4DAE4;
+			border:1px dotted #B8BFCB;
+			padding:14px;
+		}
+		fieldset{
+			border-radius:6px;
+			border:1px dotted gray;
+			margin-bottom:15px;
+			padding:0 20px;
+		}
+		legend{
+			color:gray;
+			font-size:13px;
+			margin-bottom:16px;
+		}
+		input{
+			background-color:white;
+			border-radius:4px;
+			color:#264F96;
+			font-size:16px;
+			padding:3px 3px 3px 10px;
+			outline: none;
+		}
+		#boton_enviar{
+			padding:6px 30px;
+			background-color:#2A477A;
+			color:white;
+			font-size:14px;
+		}
+		#boton_enviar:hover{
+			cursor:pointer;
+			background-color:#5376B2;
+		}
+		textarea{
+			width:450px;
+			height:50px;
+			max-height:200px;
+			min-height:50px;
+			max-width:493px;
+			min-width:300px;
+			margin-top:4px;
+			border-radius:4px;
+			color:#264F96;
+			font-size:16px;
+			padding:3px 3px 3px 10px;
+		}
+		[required]{
+			border-color:#4AA248;
+			box-shadow:0 0 3px #4AA248;
+		}
+		:invalid{
+			border-color:#FF7F7F;
+			box-shadow:0 0 3px #FF7F7F;
+		}
+		#formulario{
+			float:left;
+			width:590px;
+			margin-top:15px;
+		}
+		#mapa{
+			float:left;
+			width:510px;
+			height:425px;
+			border-radius:0 7px 7px 0;
+			margin-top:15px;
+		}
+		#tapa{
+			font-size:14px;
+			padding:5px 0 0 25px;
+			width:485px;
+			height:425px;			
+			position:absolute;
+			right:0;
+			bottom:0;
+			transition:opacity 1s;
+			-webkit-transition:opacity 1s;
+			-moz-transition:opacity 1s;
+			-o-transition:opacity 1s;
+			-ms-transition:opacity 1s;
+			background:url("img_html/logo_azul_flojo.png");
+			background-repeat:no-repeat;
+			background-position:330px -15px;
+			background-color:rgba(255,255,255,0.8);
+		}
+		#tapa:hover{
+			opacity:0;
+			cursor:pointer;
+		}
+		#reducir{
+			font-family:titulares;
+			position:absolute;
+			width:90%;
+			bottom:50%;
+			font-size:32px;
+			text-align:center;
+		}		
+		#cuentanos{
+			font-family:inder;
+			font-size:14px;
+		}
+	</style>
+  </head>
+
+  <body>
+  	<div id="franja"></div>
+	<header>
+		<img src="img_html/logo_JAB_petit.png" align="center">
+ 	      Aprende jugando, S.L.
+	</header>
+
+	<nav>
+		<ul>
+			<li><img src="img_html/iconol1.png" align="top"><p><a href="index.html">Quiénes somos</a></li>
+			<li><img src="img_html/iconol4.png" align="top"><p><a href="servicios.html">Servicios</a></li>
+			<li><img src="img_html/iconol3.png" align="top"><p>Contacto</li>
+		</ul>
+	</nav>
+
+	
+
+	<div id="contenido">
+	<div id="titulo">
+		<h2>Contacto</h2>
+		<span id="cuentanos">
+		Cuéntanos tu proyecto y realizaremos una valoración sin compromiso..
+		</span>
+	</div>
+	<section>
+
+	<div id="formulario">
+			<form action="envio.php" method="post">
+			<fieldset>
+				<legend>Datos personales</legend>
+				Nombre: <input type="text" name="nombre" size="38" placeholder="Su nombre"title="Escriba su nombre para poder referirnos a usted correctamente."autofocus autocomplete><br>
+				Correo electrónico: <input type="email" name="mail" size="28" title="Escriba su correo electrónico para poder comunicarnos con usted lo antes posible." placeholder="nombre@servidor.com"required autocomplete><br>
+			</fieldset>
+
+			<fieldset>
+				<legend>Datos del proyecto</legend>
+				Breve descripción del proyecto:<br>
+				<textarea name="descripcion"></textarea><p>
+				Estado actual del proyecto:<br>
+				<input type="radio" name="proceso" value="sin plantear" checked/> En planteamiento
+				<input type="radio" name="proceso" value="en planificación"/> En planificación
+				<input type="radio" name="proceso" value="en ejecución"/> En ejecución
+				<input type="radio" name="proceso" value="finalizado"/> Ya finalizado<p>
+				Presupuesto aproximado (en €):  
+				<input type="number" name="presupuesto" value="1000" min="150" max="30000" step="50">
+			</fieldset>
+			<input id="boton_enviar" type="submit" value="Enviar">
+		</form>
+	</div>
+
+	<div id="mapa">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x12a4a296a3edc94f%3A0xf1044539a3f39559!2sPasseig+de+Gr%C3%A0cia%2C+114%2C+08008+Barcelona!5e0!3m2!1ses!2ses!4v1389720196004" width="510" height="425" frameborder="0" style="border:0"></iframe>
+	</div>
+	<div id="tapa">
+		<b>Aprende jugando,S.L.</b>	Passeig de Gràcia, 114 . Barcelona (08008)<p>
+		Teléfono: 93.465.61.83<br>
+		e-mail:aprende@jugando.com<br>
+
+		web:www.aprendejugando.com<br>
+		<div id="reducir">
+			Ver mapa
+		</div>
+	</div>
+		
+	</section>
+	</div>
+	<div id="franja_final"></div>
+	<footer>
+ 	      &copy; 2015. Aprende jugando, S.L.<br>
+ 	      c/ del Álamo verde, 1, local. Barcelona.
+	</footer>
+  </body>
+</html>
